@@ -1,0 +1,6 @@
+Flask==3.0.3 
+Flask-PyMongo==2.3.0 
+Waitress==3.0.0
+
+
+

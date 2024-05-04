@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Personal Resume - Lusan sapkota</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo1.png')}}" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 background">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="{{ url_for('home') }}"><img style="width: 60px; height: 40px; margin-right: 10px; " src="{{ url_for('static', filename='logo1.png') }}" alt="logo"><span class="fw-bolder text-primary">Lusan Sapkota</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('resume') }}">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                <a class="btn btn-primary btn-sm" href="{{ url_for('static', filename='cv_personal.pdf')}}" target="_blank" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">
+                                    <div class="inline-block bi-download me-1"></div>
+                                    Download Resume
+                                </a>
+                                
+                                
+                            </div>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2024 - Present</div>
+                                                <div class="small fw-bolder">Student</div>
+                                                <div class="small text-muted">Freelancing</div>
+                                                <div class="small text-muted">Building Experience</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Actively pursuing studies and developing skills in my field of interest. Providing quality freelance services, managing projects, and building strong client relationships. Continuously learning and applying new skills, adapting to new environments, and demonstrating initiative in various projects.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Experience Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2024 - Past</div>
+                                                <div class="small fw-bolder">Student</div>
+                                                <div class="small text-muted">Empowering myself</div>
+                                                <div class="small text-muted">Learning developer's path</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Committed to personal empowerment and self-improvement.
+                                            Actively learning and progressing on the path to becoming a skilled developer.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section-->
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2021 - 2023</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Manaslu College</div>
+                                                    <div class="small text-muted">Chuchepatti, Kathmandu</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">High School</div>
+                                                    <div class="small text-muted">Physical Science</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Completed a rigorous curriculum combining physical sciences with computer science applications.
+                                        Developed a strong foundation in scientific principles alongside practical computing skills.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2023 - 2027</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Texas International College</div>
+                                                    <div class="small text-muted">Sifal, Kathmandu</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Undergraduate</div>
+                                                    <div class="small text-muted">BIT</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Pursuing a comprehensive undergraduate program with a focus on the latest developments in information technology.
+                                        Engaging in coursework that covers a broad range of topics, from software development to network security.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <section>
+                            <!-- Skillset Card-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <!-- Professional skills list-->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Artificial Intelligence</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Machine Learning</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Networking</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Logo Design</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Full Stack Developer</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Languages list-->
+                                    <div class="mb-0">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">&copy;2024 Lusan Sapkota</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="{{ url_for('privacy') }}">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="{{ url_for('terms') }}">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="{{ url_for('contact') }}">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    </body>
+</html>
