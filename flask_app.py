@@ -5,17 +5,18 @@ from waitress import serve
 
 app = Flask(__name__)
 
-
-username = 'sapkotalusan'
-password = 'Lusan@7890'
+# update it with your mongodb username password and uri
+username = 'user'
+password = 'password'
 escaped_username = urllib.parse.quote_plus(username)
 escaped_password = urllib.parse.quote_plus(password)
-app.config['MONGO_URI'] = f'mongodb+srv://{escaped_username}:{escaped_password}@cluster0.aga31zx.mongodb.net/portfolio'
+app.config['MONGO_URI'] = f'mongodb+srv://{escaped_username}:{escaped_password}@mongodbcluster'
 
 mongo = PyMongo(app)
 
-app.secret_key = 'PuspaKunwar'
+app.secret_key = 'MySuperSecretKey'
 
+# app routes
 @app.route('/')
 def home():
     return render_template("index.html")
@@ -73,10 +74,9 @@ def submit_contact_form():
         print("An error occurred:", str(e))
         return "An error occurred while processing your request. Please try again later.", 500
 
-mode = "development"
-
 
 if __name__ == "__main__":
+    mode = "development" # Change it to production if you want to run on waitress server
     if mode == "production":
         serve(app, host="0.0.0.0", port=5000)
     else:
